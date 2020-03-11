@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:padding="5dp" >
+
+    <ExpandableListView
+            android:id="@+id/simple_expandable_listview"
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:divider="#000000"
+            android:dividerHeight="1dp">
+    </ExpandableListView>
+
+</LinearLayout>
