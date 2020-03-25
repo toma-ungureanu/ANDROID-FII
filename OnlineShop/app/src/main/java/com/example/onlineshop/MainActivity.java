@@ -196,15 +196,24 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
     }
 
+    public void onSensorsSelected()
+    {
+        Intent intent = new Intent(this, SensorActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item)
     {
         switch (item.getItemId()) {
-            case R.id.item2:
+            case R.id.item1:
                 onProfileSelected();
                 return true;
-            case R.id.item3:
+            case R.id.item2:
                 onSettingsSelected();
+                return true;
+            case R.id.item3:
+                onSensorsSelected();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
