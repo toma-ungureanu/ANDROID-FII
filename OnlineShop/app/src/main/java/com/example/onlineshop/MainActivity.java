@@ -86,7 +86,8 @@ public class MainActivity extends AppCompatActivity
 
 
     // Setting headers and childs to expandable listview
-    void setItems() {
+    void setItems()
+    {
 
         // Array list for header
         ArrayList<String> header = new ArrayList<>();
@@ -106,13 +107,13 @@ public class MainActivity extends AppCompatActivity
             header.add("Obiect " + i);
         }
         // Adding child data
-       child1.add("Detaliu 1");
+        child1.add("Detaliu 1");
 
         // Adding child data
-       child2.add("Detaliu 2");
+        child2.add("Detaliu 2");
 
         // Adding child data
-       child3.add("Detaliu 3");
+        child3.add("Detaliu 3");
 
         // Adding child data
         child4.add("Detaliu 4");
@@ -156,8 +157,10 @@ public class MainActivity extends AppCompatActivity
             public void onGroupExpand(int groupPosition)
             {
                 if (groupPosition != previousGroup)
-                    // Collapse the expanded group
+                // Collapse the expanded group
+                {
                     expandableListView.collapseGroup(previousGroup);
+                }
                 previousGroup = groupPosition;
             }
         });
@@ -202,10 +205,17 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
     }
 
+    public void onCameraSelected()
+    {
+        Intent intent = new Intent(this, CameraActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item)
     {
-        switch (item.getItemId()) {
+        switch (item.getItemId())
+        {
             case R.id.item1:
                 onProfileSelected();
                 return true;
@@ -214,6 +224,9 @@ public class MainActivity extends AppCompatActivity
                 return true;
             case R.id.item3:
                 onSensorsSelected();
+                return true;
+            case R.id.item4:
+                onCameraSelected();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
