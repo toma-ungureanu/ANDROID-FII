@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "924486368909",
+    "firebase_url": "https://shop-assistant-5666e.firebaseio.com",
+    "project_id": "shop-assistant-5666e",
+    "storage_bucket": "shop-assistant-5666e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924486368909:android:2f0c4bb7a1f9f426c4acc4",
+        "android_client_info": {
+          "package_name": "com.example.shoppingassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "924486368909-mugph5onk8l3v639864gqk6hsqhbksjj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzfCRLGVG3ViQNeXr34iS1eFAygEP9dM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "924486368909-mugph5onk8l3v639864gqk6hsqhbksjj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

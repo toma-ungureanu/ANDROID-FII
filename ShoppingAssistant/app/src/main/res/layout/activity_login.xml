@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorMainBackground"
+    android:gravity="center"
+    tools:context=".activities.LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/msj_welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="Shopping Assistant"
+                android:textAllCaps="false"
+                android:textColor="@color/textFocusColor"
+                android:textSize="36sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <EditText
+                android:id="@+id/email_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/round_input"
+                android:textSize="18sp"
+                android:hint="Email address"
+                android:paddingVertical="15dp"
+                android:paddingLeft="25dp"
+                android:maxLines="1"
+                android:textColor="@color/textFocusColor"
+                android:textColorHint="@color/textBackColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/msj_welcome" app:layout_constraintHorizontal_bias="0.0"/>
+        <EditText
+                android:id="@+id/password_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/round_input"
+                android:hint="Password"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:paddingVertical="15dp"
+                android:paddingLeft="25dp"
+                android:textColor="@color/textFocusColor"
+                android:textColorHint="@color/textBackColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email_login"/>
+
+        <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/round_button"
+                android:fontFamily="@font/montserrat_bold"
+                android:paddingHorizontal="50dp"
+                android:paddingVertical="10dp"
+                android:text="Sign in"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/textFocusColor"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password_login"/>
+
+        <TextView
+                android:id="@+id/signup_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:fontFamily="@font/montserrat_light"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:text="@string/create_account"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_login"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
